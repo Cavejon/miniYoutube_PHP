@@ -10,18 +10,18 @@ class contatoController extends Controller
     public function index()
     {
         $array = array();
-
-        if(isset($_POST['nome']) && !empty($_POST['nome'])){
-            
-            $nome = $_POST['nome'];
-            $email = $_POST['email'];
-            $mensagem = $_POST['mensagem'];
-
-            echo "NOME:".$nome;
-            exit;
-        }
-
         $this->loadTemplate("contato", $array);
     }
 
+    public function enviar_email()
+    {
+
+        if (isset($_POST['nome']) && !empty($_POST['nome'])) {
+
+            $nome = $_POST['nome'];
+            $email = $_POST['email'];
+            $mensagem = $_POST['msg'];
+            
+        }
+    }
 }
