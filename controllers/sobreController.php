@@ -1,5 +1,5 @@
 <?php
-class sobreController extends controller
+class sobreController extends Controller
 {
     public function _construct()
     {
@@ -11,8 +11,5 @@ class sobreController extends controller
         $array = array();
         $this->loadTemplate("sobre", $array);
     }
-
 }
-
-
 ?>

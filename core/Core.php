@@ -30,6 +30,7 @@ class Core
 			$currentController = 'homeController';
 			$currentAction = 'index';
 		}
+		
 
 		if (!file_exists('controllers/' . $currentController . '.php')) {
 			$currentController = 'notFoundController';
