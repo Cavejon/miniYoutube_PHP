@@ -17,7 +17,7 @@
 		<div class="collapse navbar-collapse topo" id="navbarNav">
 			<ul class="navbar-nav ">
 				<li class="nav-item active text-light">
-					<a class="nav-link text-light" href="<?php echo BASE_URL; ?>">Home</a>
+					<a class="nav-link text-light" href="<?php echo BASE_URL; ?>/home">Home</a>
 				</li>
 				<li class="nav-item text-light">
 					<a class="nav-link text-light" href="<?php echo BASE_URL; ?>/sobre">Sobre</a>

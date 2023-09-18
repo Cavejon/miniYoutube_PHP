@@ -14,10 +14,6 @@ class homeController extends Controller
         $videos = new Videos();
         $array['videos'] = $videos->getList(4);
 
-        $usuarios = new usuarios();
-        $array['usuarios'] = $usuarios->getList(10);
-
-
         $this->loadTemplate("home", $array);
     }
 
