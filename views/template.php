@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
 	<meta charset="utf-8" />
 	<title>Youtube</title>
@@ -11,25 +10,6 @@
 	<script type="text/javascript" src="<?php echo BASE_URL; ?>/assets/js/jquery.min.js"></script>
 	<script type="text/javascript" src="<?php echo BASE_URL; ?>/assets/js/script.js"></script>
 </head>
-
-<body>
-	<nav class="navbar navbar-expand-lg navbar-light bg-dark">
-		<div class="collapse navbar-collapse topo" id="navbarNav">
-			<ul class="navbar-nav ">
-				<li class="nav-item active text-light">
-					<a class="nav-link text-light" href="<?php echo BASE_URL; ?>/home">Home</a>
-				</li>
-				<li class="nav-item text-light">
-					<a class="nav-link text-light" href="<?php echo BASE_URL; ?>/sobre">Sobre</a>
-				</li>
-				<li class="nav-item text-light">
-					<a class="nav-link text-light" href="<?php echo BASE_URL; ?>/contato">Contato</a>
-				</li>
-			</ul>
-		</div>
-	</nav>
-
-
 
 	<?php
 	$this->loadViewInTemplate($viewName, $viewData);

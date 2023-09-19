@@ -1,20 +1,25 @@
 <?php
-class homeController extends Controller
-{
+class homeController extends Controller{
 
-    public function _construct()
-    {
+    private $user;
+    public function __construct() {
         parent::__construct();
+
+        $this->user = new Users();
+        if(!$this->user->checkLogin()){
+            header("Location: ".BASE_URL."login");
+            exit;
+        }else{
+
+        }
     }
 
-    public function index()
-    {
-        $array = array();
+
+    public function index(){
+        $data = array();
         
-        $videos = new Videos();
-        $array['videos'] = $videos->getList(4);
+        
 
-        $this->loadTemplate("home", $array);
+        $this->loadTemplate('home',$data);
     }
-
 }
